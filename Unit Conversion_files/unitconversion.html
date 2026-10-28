@@ -3,6 +3,7 @@
     <head>
         <title> Unit Conversion</title>
         <link rel="stylesheet" href="unit-conv-style.css">
+        <script src= "unit-conv-script.js"></script>
     </head>
 
     <body>
@@ -13,11 +14,11 @@
                 <div class="topdiv">
                     <!-- This will have the main unit conversion buttons -->
                     <!-- Temperature redirect -->
-                    <a href="#temperature"><button class="topmenu">Temperature</button></a>
+                    <a href="#temperature"><button class="topmenu" >Temperature</button></a>
                     <!-- Weight rediirect -->
                     <a href="#weight"><button class="topmenu">Weight</button></a>
                     <!-- Distance redirect-->
-                    <a href="#distance"><button class="topmenu">Distance</button></a>
+                    <a href="#distance"><button class="topmenu" >Distance</button></a>
                 </div>
             </nav>
         </section>
@@ -43,7 +44,7 @@
                             <input type="number" id="celsius"/> <br/>
 
                             <!-- Conversion Button -->
-                            <button id="temperature"> Convert </button><br/>
+                            <button id="temperature" onclick = "temperature()"> Convert </button><br/>
                             
                             <!-- Label for Temperature output-->
                             <input type="number" id="fahrenheit"> <br/>
@@ -74,7 +75,7 @@
                             <input type="number" id="kilo"/> <br/>
 
                             <!-- Conversion Button -->
-                            <button id="weight"> Convert </button><br/>
+                            <button id="weight"  onclick = "weight()"> Convert </button><br/>
                             
                             <!-- Label for Weight output-->
                             <input type="number" id="pounds"> <br/>
@@ -106,10 +107,10 @@
 				            <input type="number" id="km"> <br/>
 
 				            <!-- The conversion button -->
-				            <button id="distance"> Convert </button> <br/>
+				            <button id="distance" onclick ="distance()"> Convert </button> <br/>
 
 				            <!-- Label for Distance output -->
-				            <input type="number" id="miles"> <br/>
+				            <input type="number" id="miles" readonly> <br/>
 
 				            <label for="miles">Miles</label>
 			            </fieldset>
